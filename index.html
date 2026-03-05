@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio Pédagogique | Oussama Omrane</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+padding:60px;
+flex-wrap:wrap;
+text-align:center;
+background: radial-gradient(circle at left, rgba(255,0,0,0.5), transparent 40%),
+            radial-gradient(circle at center, rgba(0,255,0,0.5), transparent 40%),
+            radial-gradient(circle at right, rgba(0,0,255,0.5), transparent 40%);
+}
+
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.9;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+background:white;
+padding:10px;
+}
+
+nav button{
+border:none;
+background:none;
+padding:12px 25px;
+margin:5px;
+font-size:16px;
+cursor:pointer;
+font-weight:bold;
+}
+
+nav button:hover{
+background:#2196f3;
+color:white;
+border-radius:8px;
+}
+
+nav button.active{
+background:#0d47a1;
+color:white;
+border-radius:8px;
+}
+
+/* SECTION */
+
+.section{
+display:none;
+max-width:1000px;
+margin:auto;
+padding:40px;
+}
+
+.section.active{
+display:block;
+}
+
+/* CARD */
+
+.card{
+background:white;
+color:#333;
+padding:30px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+h2{
+color:#0d47a1;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:#2196f3;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#0d47a1;
+}
+
+/* CONTACT */
+
+.contact p{
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="photo.jpg" alt="photo">
+
+<div>
+
+<h1>Oussama Omrane</h1>
+
+<p>Professeur stagiaire – Physique Chimie</p>
+
+<p>CRMEF Fès | 2025 – 2026</p>
+
+</div>
+
+</div>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<button class="active" onclick="showSection('accueil',event)">Accueil</button>
+
+<button onclick="showSection('cv',event)">CV</button>
+
+<button onclick="showSection('formation',event)">Rapport de formation</button>
+
+<button onclick="showSection('stage',event)">Rapport de stage</button>
+
+<button onclick="showSection('contact',event)">Contact</button>
+
+</nav>
+
+<!-- ACCUEIL -->
+
+<section id="accueil" class="section active">
+
+<div class="card">
+
+<h2>Présentation</h2>
+
+<p>
+
+Bienvenue dans mon portfolio pédagogique.  
+Ce site présente mon parcours académique et les travaux réalisés dans le cadre de ma formation au CRMEF de Fès.
+
+</p>
+
+<p>
+
+Il reflète également mon intérêt pour l'intégration des technologies numériques dans l'enseignement des sciences.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Objectif professionnel</h2>
+
+<p>
+
+Mon objectif est de contribuer à améliorer l’enseignement des sciences en utilisant des approches pédagogiques modernes basées sur l’expérimentation et les technologies éducatives.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CV -->
+
+<section id="cv" class="section">
+
+<div class="card">
+
+<h2>Curriculum Vitae</h2>
+
+<p><strong>Nom :</strong> Oussama Omrane</p>
+
+<p><strong>Spécialité :</strong> Physique – Chimie</p>
+
+<p><strong>Formation :</strong></p>
+
+<ul>
+
+<li>Licence en Sciences Physiques</li>
+<li>Master en Electronique</li>
+<li>Formation des enseignants – CRMEF Fès</li>
+
+</ul>
+
+<p><strong>Compétences :</strong></p>
+
+<ul>
+
+<li>Didactique des sciences</li>
+<li>Utilisation des simulations scientifiques</li>
+<li>Création de ressources numériques éducatives</li>
+<li>HTML – JavaScript</li>
+
+</ul>
+
+<a href="cv.pdf" class="btn" download>📄 Télécharger mon CV</a>
+
+</div>
+
+</section>
+
+<!-- RAPPORT FORMATION -->
+
+<section id="formation" class="section">
+
+<div class="card">
+
+<h2>Rapport de formation</h2>
+
+<p>
+
+La formation au CRMEF vise à développer les compétences pédagogiques et didactiques nécessaires à l’enseignement des sciences au secondaire.
+
+</p>
+
+<p><strong>Modules étudiés :</strong></p>
+
+<ul>
+
+<li>Didactique de la physique chimie</li>
+<li>Psychologie de l’apprentissage</li>
+<li>Intégration des TICE</li>
+<li>Gestion de classe</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- RAPPORT STAGE -->
+
+<section id="stage" class="section">
+
+<div class="card">
+
+<h2>Rapport de stage</h2>
+
+<p>
+
+Le stage pratique constitue une étape essentielle dans la formation des enseignants.
+
+</p>
+
+<p>
+
+Il permet d'observer les pratiques pédagogiques et de mettre en œuvre les compétences acquises.
+
+</p>
+
+<p><strong>Activités réalisées :</strong></p>
+
+<ul>
+
+<li>Observation de cours</li>
+<li>Préparation de séances pédagogiques</li>
+<li>Animation de séances</li>
+<li>Évaluation des apprentissages</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<div class="card contact">
+
+<h2>Contact</h2>
+
+<p>📧 Email : omraneoussama47@gmail.com</p>
+
+<p>📍 Ville : Fès</p>
+
+<p>🎓 Institution : CRMEF Fès</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Portfolio pédagogique | Oussama Omrane | CRMEF Fès</p>
+
+</footer>
+
+<script>
+
+function showSection(id,event){
+
+document.querySelectorAll('.section').forEach(
+s=>s.classList.remove('active')
+);
+
+document.getElementById(id).classList.add('active');
+
+document.querySelectorAll('nav button').forEach(
+b=>b.classList.remove('active')
+);
+
+event.target.classList.add('active');
+
+window.scrollTo({top:0,behavior:'smooth'});
+
+}
+
+</script>
+
+</body>
+</html>
